@@ -1,0 +1,159 @@
+$padding: ();
+
+@each $key, $value in $spacing {
+  $padding: map-merge($padding, (p-#{$key}: #{$value}));
+}
+
+@each $key, $value in $spacing {
+  $padding: map-merge(
+    $padding,
+    (
+      px-#{$key}:
+        (
+          padding-left: #{$value},
+          padding-right: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $padding: map-merge(
+    $padding,
+    (
+      py-#{$key}:
+        (
+          padding-top: #{$value},
+          padding-bottom: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $padding: map-merge(
+    $padding,
+    (
+      pt-#{$key}:
+        (
+          padding-top: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $padding: map-merge(
+    $padding,
+    (
+      pb-#{$key}:
+        (
+          padding-bottom: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $padding: map-merge(
+    $padding,
+    (
+      pr-#{$key}:
+        (
+          padding-right: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $padding: map-merge(
+    $padding,
+    (
+      pl-#{$key}:
+        (
+          padding-left: #{$value},
+        )
+    )
+  );
+}
+
+$margin: ();
+
+@each $key, $value in $spacing {
+  $margin: map-merge($margin, (m-#{$key}: #{$value}));
+}
+
+@each $key, $value in $spacing {
+  $margin: map-merge(
+    $margin,
+    (
+      mx-#{$key}:
+        (
+          margin-left: #{$value},
+          margin-right: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $margin: map-merge(
+    $margin,
+    (
+      my-#{$key}:
+        (
+          margin-top: #{$value},
+          margin-bottom: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $margin: map-merge(
+    $margin,
+    (
+      mt-#{$key}:
+        (
+          margin-top: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $margin: map-merge(
+    $margin,
+    (
+      mb-#{$key}:
+        (
+          margin-bottom: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $margin: map-merge(
+    $margin,
+    (
+      mr-#{$key}:
+        (
+          margin-right: #{$value},
+        )
+    )
+  );
+}
+
+@each $key, $value in $spacing {
+  $margin: map-merge(
+    $margin,
+    (
+      ml-#{$key}:
+        (
+          margin-left: #{$value},
+        )
+    )
+  );
+}

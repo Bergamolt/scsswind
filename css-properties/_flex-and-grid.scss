@@ -1,0 +1,16 @@
+$justifyContent: (
+  justify-start: flex-start,
+  justify-end: flex-end,
+  justify-center: center,
+  justify-between: space-between,
+  justify-around: space-around,
+  justify-evenly: space-evenly,
+);
+
+$alignItems: (
+  items-start: flex-start,
+  items-end: flex-end,
+  items-center: center,
+  items-baseline: baseline,
+  items-stretch: stretch,
+);

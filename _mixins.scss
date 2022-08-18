@@ -1,0 +1,10 @@
+@import './default-config';
+@import './config';
+@import './mixins/get-css-property';
+
+// PUBLIC API MIXINS
+@mixin use($args...) {
+  @each $key in $args {
+    @include getCssProperty($key);
+  }
+}

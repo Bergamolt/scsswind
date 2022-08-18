@@ -1,0 +1,77 @@
+$position: (
+  static: static,
+  fixed: fixed,
+  absolute: absolute,
+  relative: relative,
+  sticky: sticky,
+);
+
+$bottom: (
+  bottom-0: 0px,
+);
+
+$left: (
+  left-0: 0px,
+);
+
+$top: (
+  top-0: 0px,
+);
+
+$display: (
+  block: block,
+  inline-block: inline-block,
+  inline: inline,
+  flex: flex,
+  inline-flex: inline-flex,
+  table: table,
+  inline-table: inline-table,
+  table-caption: table-caption,
+  table-cell: table-cell,
+  table-column: table-column,
+  table-column-group: table-column-group,
+  table-footer-group: table-footer-group,
+  table-header-group: table-header-group,
+  table-row-group: table-row-group,
+  table-row: table-row,
+  flow-root: flow-root,
+  grid: grid,
+  inline-grid: inline-grid,
+  contents: contents,
+  list-item: list-item,
+  hidden: none,
+);
+
+$boxSizing: (
+  box-border: border-box,
+  box-content: content-box,
+);
+
+$zIndex: (
+  z-0: 0,
+  z-10: 10,
+  z-20: 20,
+  z-30: 30,
+  z-40: 40,
+  z-50: 50,
+  z-auto: auto,
+);
+
+$visibility: (
+  visible: visible,
+  invisible: hidden,
+);
+
+$aspectRatio: (
+  aspect-auto: auto,
+  aspect-square: '1 / 1',
+  aspect-video: '16 / 9',
+);
+
+$objectFit: (
+  object-contain: contain,
+  object-cover: cover,
+  object-fill: fill,
+  object-none: none,
+  object-scale-down: scale-down,
+);

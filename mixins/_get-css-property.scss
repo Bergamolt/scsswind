@@ -1,0 +1,48 @@
+@import '../utils/get-property';
+@import '../utils/has_hover';
+
+$properties: map-get($config, properties);
+
+@mixin getCssProperty($name) {
+  $propertyName: null;
+  $propertyValue: null;
+  $propertyList: ();
+
+  $isHover: hasHover($name);
+
+  $name: if($isHover, str-slice($name, 8), $name);
+
+  @each $property, $map in $properties {
+    @each $propKey, $propValue in $map {
+      @if $propKey == $name {
+        $propertyName: $property;
+
+        @if type-of($propValue) == map {
+          $propertyList: map-merge($propertyList, $propValue);
+        } @else {
+          $propertyValue: $propValue;
+        }
+      }
+    }
+  }
+
+  @if $isHover {
+    &:hover {
+      @if length($propertyList) != 0 {
+        @each $name in $propertyList {
+          #{$propertyName}-#{$name}: #{$propertyValue};
+        }
+      } @else {
+        #{$propertyName}: #{$propertyValue};
+      }
+    }
+  } @else {
+    @if length($propertyList) != 0 {
+      @each $name, $value in $propertyList {
+        #{$name}: #{$value};
+      }
+    } @else {
+      #{$propertyName}: #{$propertyValue};
+    }
+  }
+}

@@ -1,0 +1,3 @@
+@function getProp($prop, $key) {
+  @return map-get(map-get($propertiesConfig, $prop), $key);
+}

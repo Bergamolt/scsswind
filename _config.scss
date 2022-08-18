@@ -1,0 +1,67 @@
+@import './css-properties';
+
+$config: (
+  properties: (
+    // layout
+    position: $position,
+    bottom: $bottom,
+    left: $left,
+    top: $top,
+    display: $display,
+    box-sizing: $boxSizing,
+    z-index: $zIndex,
+    aspect-ratio: $aspectRatio,
+    object-fit: $objectFit,
+    // flex and grid
+    justify-content: $justifyContent,
+    align-items: $alignItems,
+    // typography
+    color: $textColor,
+    letter-spacing: $letterSpacing,
+    line-height: $lineHeight,
+    font-size: $fontSize,
+    font-family: $fontFamily,
+    font-weight: $fontWeight,
+    font-style: $fontStyle,
+    list-style-type: $listStyleType,
+    list-style-position: $listStylePosition,
+    text-align: $textAlign,
+    text-decoration: $textDecoration,
+    text-decoration-color: $textDecorationColor,
+    text-decoration-style: $textDecorationStyle,
+    text-decoration-thickness: $textDecorationThickness,
+    text-underline-offset: $textUnderlineOffset,
+    text-transform: $textTransform,
+    // backgrounds
+    background-attachment: $backgroundAttachment,
+    background-clip: $backgroundClip,
+    background-color: $backgroundColor,
+    background-image: $backgroundImage,
+    background-size: $backgroundSize,
+    background-repeat: $backgroundRepeat,
+    background-position: (),
+    background-origin: (),
+    // spacing
+    padding: $padding,
+    margin: $margin,
+    // borders
+    border-radius: $borderRadius,
+    border-color: $borderColor,
+    border-width: $borderWidth,
+    border-style: $borderStyle,
+    // effects
+    opacity: $opacity,
+    // sizing
+    width: $width,
+    min-width: $minWidth,
+    max-width: $maxWidth,
+    height: $height,
+    min-height: $minHeight,
+    max-height: $maxHeight,
+    // transiotion
+    transition-propesty: $transitionProperty,
+    transition-duration: $transitionDuration,
+    transition-timing-function: $transitionTimingFunction,
+    transition-delay: $transitionDelay,
+  ),
+);
