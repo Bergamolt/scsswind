@@ -6,6 +6,15 @@ Scsswind is a javascript free port of [tailwindcss](https://tailwindcss.com/), w
 
 ```
   header {
-    @include use(bg-sky-500, color-white, h-16, w-full, flex, justify-between, items-center, px-4, box-border);
+    @include use(bg-sky-500,
+      color-white,
+      h-16, 
+      w-full, 
+      flex, 
+      justify-between, 
+      items-center, 
+      px-4, 
+      box-border
+    );
   }
 ```
